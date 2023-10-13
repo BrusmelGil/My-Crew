@@ -1,6 +1,129 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --green: #47AB5D;
+    --blue: #2B297C;
+    --lead: hsl(162, 2%, 56%);
+    --violet: hsl(272, 92%, 32%);
+    --tex-black: rgb(0, 0, 0);
+    --text-light-gray: hsl(0, 0%, 90%);
+    --glass-bg-color: hsla(201, 57%, 19%, 0.81);
+    --border-color: hsla(0, 7%, 6%, 0.388);
+    --blur: blue(10px);
+    --button-hover-color: hsla(0, 0%, 0%, 0.3);
+    --section-background-color: rgba(255, 255, 255, 0.417);
+
+}
+
+.form-main {
+    background-color: var(--section-background-color);
+    color: var(--text-light-gray);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden;
+    min-height: 100vh;
+    padding: 60px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-content {
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    z-index: 1;
+}
+
+.form-content .box {
+    border-color: var(--glass-bg-color);
+    border: 1px solid var(--border-color);
+    padding: 50px 60px;
+    border-radius: 20%;
+    backdrop-filter: var(--blur);
+}
+
+.form-content h4 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.2;
+    color: var(--tex-black);
+    font-weight: 500;
+}
+
+.form-content form {
+    margin: 25px 0 20px;
+}
+
+.form-content .input-box {
+    margin: 25px;
+}
+
+.form-content .input-control {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    color: black;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.form-content .input-control:focus {
+    outline: none;
+}
+
+.form-content .btn {
+    height: 45px;
+    width: 60%;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    background: linear-gradient(to right, var(--green), var(--lead));
+    border: none;
+    color: white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-left: 20%;
+
+}
+
+.form-content .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.5s ease;
+    z-index: -1;
+
+}
+
+.form-content .btn:hover::before {
+    background-color: var(--button-hover-color);
+
+}
+
+.form-content .input-link {
+    margin-top: 5%;
+    margin-left: 20%;
 }
