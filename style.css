@@ -234,6 +234,19 @@ transform: scale(1.1);
     font-size: large;
 }
 
+/* .herramientas{
+   
+} */
+
+.logo-herramientas{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--blue) ;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
 
 
 
