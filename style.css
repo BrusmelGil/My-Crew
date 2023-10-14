@@ -2,23 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url(./profile.css);
 
 :root {
     --green: #47AB5D;
     --blue: #2B297C;
-    --lead: hsl(162, 2%, 56%);
-    --violet: hsl(272, 92%, 32%);
+    /* --lead: hsl(162, 2%, 56%); */
+    --violet: hsla(272, 91%, 32%, 0.306);
     --tex-black: rgb(0, 0, 0);
     --text-light-gray: hsl(0, 0%, 90%);
     --glass-bg-color: hsla(201, 57%, 19%, 0.81);
     --border-color: hsla(0, 7%, 6%, 0.388);
     --blur: blue(10px);
     --button-hover-color: hsla(0, 0%, 0%, 0.3);
-    --section-background-color: rgba(255, 255, 255, 0.417);
+    --section-background-color:rgba(255, 255, 255, 0.417);
 
 }
 
@@ -41,7 +41,7 @@
     width: 100%;
     max-width: 500px;
     position: relative;
-    z-index: 1;
+    z-index: 1; /* se utiliza para especificar el orden de apilamiento vertical de los elementos que se superponen. */
 }
 
 .form-content .box {
@@ -100,7 +100,7 @@ a{
     cursor: pointer;
     border-radius: 25px;
     user-select: none;
-    background: linear-gradient(to right, var(--green), var(--lead));
+    background: linear-gradient(to right, var(--green), var(--blue));
     border: none;
     color: white;
     position: relative;
@@ -137,16 +137,17 @@ a{
     color:var(--tex-black);
     opacity: 1;
 }
-
-.logo-main{
+.logo-main {
     display: flex;
     width: 50%;
+    
 }
 
-.logo-content img{
+.logo-content img {
     width: 6%;
     float: left;
     margin-left: 10%;
+
 }
 
 .logo-content-google img {
@@ -154,3 +155,87 @@ a{
     margin-left: 2%;
 
 }
+
+.pregunta{
+    font-size: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration:underline;
+    margin-left: 5%;
+    width: 30%;
+}
+
+.contenedor-emociones{
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--blue) ;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        transition: transform .8s ease;
+}
+
+.contenedor-emociones img:hover{
+transform: scale(1.1);
+}
+
+.emociones img{
+    width: 50%;
+    margin-left: 20%;
+    margin-right: 5%;
+}
+
+.miedo img {
+    width: 70%;
+    margin-right: 20%;
+}
+.asco img {
+    width: 40%;
+    margin-right: 10%;
+}
+
+.content{
+    background-color: rgba(128, 128, 128, 0.22);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2vw 0;
+}
+
+.container-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img img {
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    transition: transform .5s ease;
+    margin-top: 15%;
+    
+}
+
+.profile-img img:hover {
+    transform: scale(1.1);
+}
+.profile-name {
+    color: var(--tex-black);
+    margin: 5px 0 1px 0;
+    font-size: xx-large;
+    margin-bottom: 5%;
+}
+
+.profile-description {
+    font-size: large;
+}
+
+
+
+
+
+
