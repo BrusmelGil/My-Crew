@@ -163,7 +163,6 @@ a{
     text-transform: capitalize;
     font-family: inherit;
     cursor: pointer;
-    text-decoration:underline;
     margin-left: 5%;
     width: 30%;
 }
@@ -197,58 +196,51 @@ transform: scale(1.1);
     margin-right: 10%;
 }
 
-.content{
-    background-color: rgba(128, 128, 128, 0.22);
+.contenedor-global-perfil{
+    background-color: #ff7f99;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 2vw 0;
+    padding: 3vw 0;
 }
 
-.container-profile{
+.container-profile {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .profile-img img {
-    width: 15vw;
-    height: 15vw;
+    width: 100%;
+    height: 20%;
     object-fit: cover;
-    transition: transform .5s ease;
-    margin-top: 15%;
+    border-radius: 100%;
+    /* transition: transform .5s ease; */
+}
+
+
+.profile-img img:hover {
+    /* transform: scale(1.1); */
+    content: url("./avatar/man.jpg"), url("./avatar/mujer.jpg");
     
 }
 
-.profile-img img:hover {
-    transform: scale(1.1);
-}
 .profile-name {
-    color: var(--tex-black);
-    margin: 5px 0 1px 0;
-    font-size: xx-large;
-    margin-bottom: 5%;
+    color: var(--blue);
+    margin: 6px 0 2px 0;
+    cursor: pointer;
+    font-size: x-large;
+    margin-bottom: 3vh;
 }
 
 .profile-description {
-    font-size: large;
+    color: var(--tex-black);
+    font-size: medium;
+    margin-bottom: 2vh;
+
 }
-
-/* .herramientas{
-   
-} */
-
-.logo-herramientas{
-    display: flex;
-    align-items: center;
-    border: 1px solid var(--blue) ;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
+.description{
+    color: var(--tex-black);
+    font-size: medium;
 }
-
-
-
-
-
-
