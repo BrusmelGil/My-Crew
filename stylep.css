@@ -16,12 +16,12 @@
 
 h2 {
     position: absolute;
-    left: -100%; /* Inicialmente, ocultamos el h2 fuera de la pantalla a la izquierda */
     top: 0;
     background-color: rgb(43, 41, 124);
     color: white;
     padding: 10px;
     transition: left 0.3s;
+    
     padding-top: 140px;
     padding-left: 60px;
     min-width: 500px;
@@ -30,7 +30,8 @@ h2 {
 
 h3 {
     color: aliceblue;
-    text-align: left; /* Alineado a la izquierda */
+    text-align: right; 
+    margin-left: 900px;
     margin-top: 30px;
     margin-right: 30px;
     font-size: medium;
@@ -46,6 +47,6 @@ img {
 }
 
 #logo:hover + h2 {
-    left: 0; /* Mostrar el h2 cuando el ratón pasa sobre la imagen */
+    left: 0; 
     transition-delay: 0.3s;
 }
