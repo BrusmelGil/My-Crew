@@ -44,30 +44,7 @@
     margin-top: 70px;
     margin-left: 100px;    
 }
-.logo:hover + .eslogan {
-    transform: translateX(0);
-    left: 20px; 
-}
-img {
-    height: 150px;
-    width: 150px;
-}
-#header{
-    display: flex;
-    height: 200px;
-    width: 100%;
-    background-color: rgb(43, 41, 124);
-    justify-content: space-between;
-    padding-bottom: -50px;
-    padding: 10px;
-}
-h2{
-    color: aliceblue;
-    padding-top: 140px;
-    padding-left: 60px;
-    min-width: 500px;
-    font: helvetica;   
-}
+
 h3{
     max-height: 20px;
     color: aliceblue;
