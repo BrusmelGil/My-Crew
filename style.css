@@ -4,51 +4,40 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-.header {
-    position: relative;
-    height: 200px;
+.footer{
+    
+    height: 80px;
     background-color: rgb(43, 41, 124);
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     color: aliceblue;
+    bottom: 0%;
+    margin-top: 100%;
 }
-.company{
-    font-size: large;
-    font-family: Helvetica;
-    float: right;
-    width: 100px;
-    margin-left: 910px;
-    margin-bottom: 90px;
-    width: 220px;
-}
-.header-content {
+.left{
     display: flex;
     align-items: center;
+    margin-left: 30px;
 }
-.logo {
-    margin-left: 20px;
-    margin-top: 20px;
-    cursor: pointer; 
+img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 30px;
+    background-color: transparent;
 }
-.eslogan {
-    position: absolute;
-    font-size: larger;
-    left: -200px; 
-    top: 50px;
-    transform: translateX(-100%);
-    transition: transform 0.5s;
-    font-size: x-large;
-    font-family: Arial;
-    margin-top: 70px;
-    margin-left: 100px;    
+p{ 
+    margin-top: 10px;
 }
-.logo:hover + .eslogan {
-    transform: translateX(0);
-    left: 20px; 
+.right {
+    padding-right: 50px;
+    display: flex;
+    align-items: left;
+    margin-right: 50px;
+    margin-left: 50px;
+    max-width: 200px;
 }
-img {
-    height: 150px;
-    width: 150px;
-}
+
+
